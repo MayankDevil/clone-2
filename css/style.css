@@ -1,0 +1,239 @@
+/*
+-	Clone-2 "Google"
+-	Developed by Mayank
+-	CopyRight by Google
+-	CSS : ./css/style.css
+*/
+*
+{
+    user-select: none;
+    margin:0;
+    padding: 0;
+    text-decoration: none;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    color:#343a4D;
+    outline: none;
+    border: none;
+}
+:root
+{
+}
+.dark
+{
+}
+::-webkit-scrollbar
+{
+    width:0.5rem;
+    background: var(--white);
+}
+::-webkit-scrollbar-thumb
+{
+    border-radius: 10px;
+    background: var(--gray);
+}
+/*
+    ------------------
+    | BOOTSTRAP ICON |
+    ------------------
+*/
+@import url("bootstrap-icons.css");
+/*
+    bi class style
+*/
+.bi {
+    margin:0;
+    font-size: 1.1rem;
+}
+span[class="bi"]
+{
+    margin: 0;
+    padding: 0;
+}
+/*
+    ICON CSS
+*/
+body
+{
+    scroll-behavior: smooth;
+}
+#mother_container
+{
+    width: 100%;
+    min-height: 100vh;
+}
+/*
+    HEADER CSS -----
+*/
+#header
+{
+    height: 10vh;
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.nav_link
+{
+    display: inline-block;
+    padding: 1rem;
+    color:#343a4D;
+}
+#app_menu
+{
+    display: inline-block;
+    margin: 1rem;
+    padding: 5px;
+    background: transparent;
+}
+#app_menu:hover
+{
+     background:rgba(210,210,210,0.5);
+}
+.btn
+{
+    display: inline-block;
+    padding: 0.5rem 1.5rem;
+    color:#f8f9fa;
+    background: #007bff;
+    border-radius:5px ;
+}
+/*
+    SEARCH CSS -----
+*/
+#main_frame
+{
+    min-height:78vh;
+    display:grid;
+    align-items:center;
+    justify-content:center;
+}
+#center
+{
+    max-width: 60vw;
+    text-align: center;
+}
+/*
+    brand name -----
+*/
+#brand_name .char
+{
+    font-size: 6rem;
+    font-weight: bold;
+    display: inline-block;
+    margin: 0;
+    word-spacing: 0px;
+}
+.char:nth-child(1),
+.char:nth-child(4)
+{
+    color:#007bff;
+}
+.char:nth-child(2),
+.char:nth-child(6)
+{
+    color:#dc3545;
+}
+.char:nth-child(3)
+{
+    color:#ffc107;
+}
+.char:nth-child(5)
+{
+    color:#28a745;
+}
+/*
+    serach bar -----
+*/
+#search_bar
+{
+    width: 50vw;
+    margin: 2rem auto;
+    display: flex;
+    align-items: center;
+    border-radius: 5rem;
+    box-shadow: 2px 2px 10px #343a40;
+}
+#serach_fld
+{
+    width: 90%;
+    padding: 1rem;
+    font-size: 1rem;
+    background: transparent;
+}
+.fld_icon
+{
+    width: 10%;
+    object-fit:cover;
+}
+/*
+    book mark -----
+*/
+#bookmark
+{
+    width: 500px;
+    margin: auto;
+    display: grid;
+    grid-gap:1rem;
+    grid-template-columns: repeat(4,1fr);
+}
+.mark
+{
+    padding: 1rem;
+    display: grid;
+    background: transparent;
+}
+.mark:hover
+{
+    background:rgba(210,210,210,0.5);
+    border-radius: 5px;
+    text-align: center;
+}
+.mark > img
+{
+    width: auto;
+    margin:auto;
+}
+.mark > .bi
+{
+    display: block;
+    height: 100%;
+    font-size: 2rem;
+}
+.mark > div
+{
+    padding-top: 1rem;
+}
+/*
+    FOOTER CSS -----
+*/
+#footer
+{
+    height: 12vh;
+    justify-content: flex-end;
+    background: #f8f9fa;
+}
+#select_field
+{
+    list-style-type: none;
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    background: transparent;
+    border-bottom: 1px solid #ccc;
+}
+#nav
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.nav_item
+{
+    display: inline-block;
+    padding: 1rem;
+    color:#343a4D;
+}
+/*
+	THE END ===
+*/
