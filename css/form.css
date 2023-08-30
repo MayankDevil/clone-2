@@ -1,0 +1,82 @@
+/*
+-	Clone-2 "Google"
+-	Developed by Mayank
+-	CopyRight by Google
+-	CSS : ./css/form.css
+*/
+#login_section
+{
+    display: grid;
+    place-content: center center;
+    font-weight: 540;
+    color:#6c757d;
+}
+#login_form
+{
+    min-width: 400;
+    margin: 10vh auto;
+    padding: 2rem 2rem 3rem 2rem;
+    border: 1px solid #ced4da;
+    border-radius: 10px;
+}
+.text_center
+{
+    text-align: center;
+    padding: 1rem 0;
+}
+legend
+{
+    padding: 5px;
+    text-align: center;
+    font-weight: 540;
+    font-size:1.5rem;
+}
+.flt_lbl
+{
+    padding: 1rem 0;
+    position: relative;
+}
+.lbl
+{
+    position: absolute;
+    padding-left: 1rem;
+    margin-top: 1rem;
+    font-weight: 550;
+    font-size: 1rem;
+    color:#6c757d;
+}
+#email_fld
+{
+    width: 90%;
+    margin: auto;
+    padding: 1rem;
+    border: 1px solid #adb5bd;
+    border-radius: 5px;
+}
+.link
+{
+    line-height: 3rem;
+    color:var(--blue);
+}
+.btn_grp
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.more
+{
+    padding: 3rem 0;
+}
+#brand
+{
+    font-size: 2rem !important;
+    padding: 1rem;
+}
+#brand .char
+{
+    margin-left: -0.5rem;
+}
+/*
+	THE END ===
+*/

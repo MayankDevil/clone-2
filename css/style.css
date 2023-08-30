@@ -4,23 +4,38 @@
 -	CopyRight by Google
 -	CSS : ./css/style.css
 */
+
+@import url('chrome://resources/css/roboto.css');
+@import "./form.css";
+/*
+    --------------
+    | import css |
+    --------------
+*/
 *
 {
     user-select: none;
     margin:0;
     padding: 0;
     text-decoration: none;
-    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji",'Roboto';
     color:#343a4D;
     outline: none;
     border: none;
 }
 :root
 {
+    --blue: #007bff;
+    --black:#343a4D;
+    --light:#f8f9fa;
 }
-.dark
-{
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Roboto'), local('Roboto-Regular'),url(//resources/roboto/roboto-regular.woff2) format('woff2');
 }
+
 ::-webkit-scrollbar
 {
     width:0.5rem;
@@ -31,27 +46,6 @@
     border-radius: 10px;
     background: var(--gray);
 }
-/*
-    ------------------
-    | BOOTSTRAP ICON |
-    ------------------
-*/
-@import url("bootstrap-icons.css");
-/*
-    bi class style
-*/
-.bi {
-    margin:0;
-    font-size: 1.1rem;
-}
-span[class="bi"]
-{
-    margin: 0;
-    padding: 0;
-}
-/*
-    ICON CSS
-*/
 body
 {
     scroll-behavior: smooth;
@@ -97,30 +91,37 @@ body
     background: #007bff;
     border-radius:5px ;
 }
+.btn:hover
+{
+    background: #aaccff;
+}
 /*
     SEARCH CSS -----
 */
 #main_frame
 {
-    min-height:78vh;
     display:grid;
+    min-height:78vh;
     align-items:center;
     justify-content:center;
 }
 #center
 {
-    max-width: 60vw;
+    max-width: 50vw;
     text-align: center;
 }
 /*
     brand name -----
 */
-#brand_name .char
+#brand_name 
 {
     font-size: 6rem;
-    font-weight: bold;
+}
+.char
+{
     display: inline-block;
-    margin: 0;
+    margin-left: -1.5rem;
+    font-weight: bold;
     word-spacing: 0px;
 }
 .char:nth-child(1),
@@ -151,7 +152,11 @@ body
     display: flex;
     align-items: center;
     border-radius: 5rem;
-    box-shadow: 2px 2px 10px #343a40;
+    border: 1px solid #dee2e6;
+}
+#search_bar:hover
+{
+    box-shadow: 2px 2px 10px #ced4da;
 }
 #serach_fld
 {
