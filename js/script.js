@@ -8,13 +8,19 @@ try
 {
     
 
-    document.getElementById('theme-btn').onclick = () => {
+    let search_fld = document.getElementById('search_fld')
+    
+    let data_list = document.getElementById('data_list')
 
-        let element = document.body;
+    search_fld.onfocus = () => {
 
-        element.classList.toggle('dark')
+        data_list.innerHTML = "hero"
     }
 
+    function search_data()
+    {
+        url.forEach(data => ` <a href="${data}"> ${data} </a>` );
+    }
     url = [
         "https://github.com/login",
         "https://web.telegram.org/",

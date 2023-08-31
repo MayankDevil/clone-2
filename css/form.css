@@ -14,15 +14,27 @@
 #login_form
 {
     min-width: 400;
-    margin: 10vh auto;
+    margin: 10vh auto 0 auto;
     padding: 2rem 2rem 3rem 2rem;
     border: 1px solid #ced4da;
     border-radius: 10px;
 }
+/*
+     center brand title
+*/
 .text_center
 {
     text-align: center;
     padding: 1rem 0;
+}
+#brand
+{
+    font-size: 1.5rem !important;
+    padding: 1rem;
+}
+#brand .char
+{
+    margin-left: -0.3rem;
 }
 legend
 {
@@ -31,7 +43,10 @@ legend
     font-weight: 540;
     font-size:1.5rem;
 }
-.flt_lbl
+/*
+    field label -----------
+*/
+.fld_lbl
 {
     padding: 1rem 0;
     position: relative;
@@ -39,8 +54,8 @@ legend
 .lbl
 {
     position: absolute;
-    padding-left: 1rem;
-    margin-top: 1rem;
+    left:1rem;
+    top:2rem;
     font-weight: 550;
     font-size: 1rem;
     color:#6c757d;
@@ -53,10 +68,29 @@ legend
     border: 1px solid #adb5bd;
     border-radius: 5px;
 }
+#email_fld:hover
+{
+    border:1px solid #0d6efd;
+}
+:is(.fld_lbl:hover,#email_fld:hover) .lbl
+{
+    transition: all linear 0.2s;
+    top:0.5rem;
+    padding: 0 5px;
+    color:#0d6efd;
+    background:#fff;
+}
+/*
+    button group & links ----------
+*/
 .link
 {
     line-height: 3rem;
     color:var(--blue);
+}
+.link:hover
+{
+     color:#0050c9;
 }
 .btn_grp
 {
@@ -68,14 +102,22 @@ legend
 {
     padding: 3rem 0;
 }
-#brand
+/*
+    second footer --------
+*/
+#second_footer
 {
-    font-size: 2rem !important;
-    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
 }
-#brand .char
+#second_footer > select
 {
-    margin-left: -0.5rem;
+    width: 30%;
+    border-bottom: none;
+}
+#second_footer > div
+{
+    display: flex;
 }
 /*
 	THE END ===
