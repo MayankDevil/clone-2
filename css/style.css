@@ -6,7 +6,9 @@
 */
 
 @import url('chrome://resources/css/roboto.css');
+@import "responsive.css";
 @import "./form.css";
+
 /*
     --------------
     | import css |
@@ -60,11 +62,12 @@ body
 */
 #header
 {
-    height: 10vh;
-    padding: 0 2rem;
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    height: 10vh;
+    padding: 0 2rem;
+    font-size: 14px;
 }
 .nav_link
 {
@@ -79,10 +82,16 @@ body
 }
 #app_menu
 {
-    display: inline-block;
-    margin: 1rem;
+    display: block;
+    margin: 0.5rem;
     padding: 5px;
     background: transparent;
+    border-radius: 1rem;
+}
+#app_menu img
+{
+    width: 20px;
+    height: auto;
 }
 #app_menu:hover
 {
@@ -106,13 +115,13 @@ body
 #main_frame
 {
     display:grid;
-    min-height:78vh;
-    align-items:center;
     justify-content:center;
+    min-height:70vh;
+    margin-top: 8vh;
 }
 #center
 {
-    max-width: 50vw;
+    max-width: 60vw;
     text-align: center;
 }
 /*
@@ -120,13 +129,13 @@ body
 */
 #brand_name 
 {
-    font-size: 6rem;
+    font-size: 75px;
 }
 .char
 {
     display: inline-block;
-    margin-left: -1.5rem;
-    font-weight: bold;
+    margin-left: -20px;
+    font-weight: normal;
     word-spacing: 0px;
 }
 .char:nth-child(1),
@@ -152,7 +161,7 @@ body
 */
 #search_bar
 {
-    width: 50vw;
+    min-width: 500px;
     margin: 2rem auto;
     display: flex;
     align-items: center;
@@ -166,13 +175,14 @@ body
 #search_fld
 {
     width: 90%;
-    padding: 1rem;
-    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    font-size: 14px;
     background: transparent;
 }
 .fld_icon
 {
     width: 10%;
+    padding: 3px;
     object-fit:cover;
 }
 /*
@@ -180,15 +190,15 @@ body
 */
 #bookmark
 {
-    width: 500px;
-    margin: auto;
     display: grid;
-    grid-gap:1rem;
     grid-template-columns: repeat(4,1fr);
+    width: 400px;
+    margin: auto;
 }
 .mark
 {
-    padding: 1rem;
+    width:auto;
+    padding: 1rem 1.5rem;
     display: grid;
     background: transparent;
 }
@@ -200,18 +210,20 @@ body
 }
 .mark > img
 {
-    width: auto;
+    width: 25px;
     margin:auto;
+    object-fit: cover;
 }
 .mark > .bi
 {
     display: block;
     height: 100%;
-    font-size: 2rem;
+    font-size: 14px;
 }
 .mark > div
 {
     padding-top: 1rem;
+    font-size: 14px;
 }
 /*
     FOOTER CSS -----
@@ -219,7 +231,7 @@ body
 #footer
 {
     height: 12vh;
-    justify-content: flex-end;
+    font-size: 14px;
     background: #f8f9fa;
 }
 #select_field

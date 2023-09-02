@@ -8,6 +8,7 @@
 {
     display: grid;
     place-content: center center;
+    font-size: 14px;
     font-weight: 540;
     color:#6c757d;
 }
@@ -41,7 +42,8 @@ legend
     padding: 5px;
     text-align: center;
     font-weight: 540;
-    font-size:1.5rem;
+    font-size:20px;
+    line-height: 2rem;
 }
 /*
     field label -----------
@@ -57,7 +59,7 @@ legend
     left:1rem;
     top:2rem;
     font-weight: 550;
-    font-size: 1rem;
+    font-size: 14px;
     color:#6c757d;
 }
 #email_fld
