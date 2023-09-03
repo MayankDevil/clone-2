@@ -4,8 +4,83 @@
 -	CopyRight by Google
 -	CSS : ./css/responsive.css
 */
-
-@media screen and (min-width:800px)
+@media screen and (min-width:100px)
 {
-    
+    #search_bar
+    {
+        width: 600px !important;
+        margin: 2rem auto;
+    }
+}
+@media screen and (max-width:765px)
+{
+    #header
+    {
+        padding: 0 1rem;
+    }
+    #main_frame
+    {
+        width: 100% !important;
+        min-height:70vh;
+        margin-top: 10vh;
+    }
+    #center
+    {
+        width: 90vw !important;
+    }
+    #brand_name 
+    {
+        padding: 1rem;
+        font-size: 3rem !important;
+    }
+    .char
+    {
+        display: inline-block;
+        margin-left:0;
+    }
+    #search_bar
+    {
+        width: 100% !important;
+        margin: auto;
+    }
+    #search_fld
+    {
+        width: 80% !important;
+    }
+    .fld_icon
+    {
+        width: 10% !important;
+        padding: 0;
+        object-fit:cover;
+    }
+    #bookmark
+    {
+        width: 100% !important;
+        margin: auto;
+    }
+    .mark
+    {
+        width:auto;
+        padding: 1rem;
+        display: grid;
+        background: transparent;
+    }
+    .mark > img
+    {
+        width: 30%;
+        margin:auto;
+        object-fit: cover;
+    }
+    #nav > div:first-child
+    {
+        display: none;
+    }
+    #login_form
+    {
+        width: 90% !important;
+        margin: 10vh auto 0 auto;
+        padding: 1rem 1rem 3rem 1rem;
+        border: 1px solid #ced4da;
+        border-radius: 10px;
+    }
 }

@@ -14,7 +14,7 @@
 }
 #login_form
 {
-    min-width: 400;
+    width: 400px;
     margin: 10vh auto 0 auto;
     padding: 2rem 2rem 3rem 2rem;
     border: 1px solid #ced4da;
@@ -42,8 +42,8 @@ legend
     padding: 5px;
     text-align: center;
     font-weight: 540;
-    font-size:20px;
-    line-height: 2rem;
+    font-size:18px;
+    line-height: 1rem;
 }
 /*
     field label -----------
@@ -88,6 +88,7 @@ legend
 .link
 {
     line-height: 3rem;
+    font-size: 14px;
     color:var(--blue);
 }
 .link:hover

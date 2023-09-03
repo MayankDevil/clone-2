@@ -10,7 +10,7 @@
 
 - Status : REST
 
-- Responsive : False
+- Responsive : True
 
 - TecStack : { HTML | CSS | JavaScript }
 
